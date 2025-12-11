@@ -9,7 +9,7 @@ Step 2: Create EC2
 
 Name: Ec2host and connect
 -------------------------------------------------------------------------------------------
-Step 3: Install Mysql on Ec2
+Step 3: Install mysql on Ec2
 
 sudo apt update -y
 sudo apt install mysql-server -y
@@ -18,7 +18,7 @@ Connect RDS to EC2
 
 mysql -h login-db.cj4x7kld6rdb.ap-south-1.rds.amazonaws.com -u admin -p
 -------------------------------------------------------------------------------------------
-Step 4: Create Database and table in EC2 server or Mysql (It will switch to mysql)
+Step 4: Create Database and table in EC2 server or Mysql (It will switch to mysql commandline interface)
 
 CREATE DATABASE LoginDB;
 
@@ -30,7 +30,7 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL
 );
 ----------------------------------------------------------------------------------------------
-Step 5: EC2 setup (Switch to EC2 (Ubuntu))
+Step 5: EC2 setup (Switch to EC2 (Ubuntu command line interface))
 
 sudo apt update -y
 sudo apt install apache2 php libapache2-mod-php php-mysql -y
